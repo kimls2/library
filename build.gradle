@@ -1,0 +1,31 @@
+import app.library.buildsrc.Libs
+
+buildscript {
+    ext.buildConfig = [
+            'compileSdk': 29,
+            'minSdk'    : 23,
+            'targetSdk' : 29,
+    ]
+
+    repositories {
+        google()
+        jcenter()
+    }
+    dependencies {
+        classpath "com.android.tools.build:gradle:4.0.1"
+
+        classpath Libs.Hilt.gradlePlugin
+        classpath Libs.AndroidX.Navigation.safeArgs
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

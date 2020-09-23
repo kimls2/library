@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">My Library</string>
+    <string name="new_books_title">NEW</string>
+    <string name="search_title">Search</string>
+    <string name="bookmark_title">Bookmark</string>
+    <string name="history_title">History</string>
+    <string name="memo_label">Memo:</string>
+    <string name="empty_view">Empty view</string>
+
+</resources>
